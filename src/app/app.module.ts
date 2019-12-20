@@ -3,6 +3,19 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
+/**
+ * import angular material modules
+ */
+import {
+  MatInputModule,
+  MatRadioModule,
+  MatSelectModule,
+  MatSliderModule,
+  MatCheckboxModule,
+  MatFormFieldModule
+} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -10,7 +23,16 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    // angular material modules
+    MatInputModule,
+    MatRadioModule,
+    MatSelectModule,
+    MatSliderModule,
+    MatCheckboxModule,
+    MatFormFieldModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
