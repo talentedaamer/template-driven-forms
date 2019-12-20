@@ -12,14 +12,17 @@ import {
   MatInputModule,
   MatRadioModule,
   MatSelectModule,
+  MatButtonModule,
   MatSliderModule,
   MatCheckboxModule,
-  MatFormFieldModule
+  MatFormFieldModule,
 } from '@angular/material';
+import { FormLoginComponent } from './forms/form-login/form-login.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FormLoginComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +33,7 @@ import {
     MatInputModule,
     MatRadioModule,
     MatSelectModule,
+    MatButtonModule,
     MatSliderModule,
     MatCheckboxModule,
     MatFormFieldModule,
